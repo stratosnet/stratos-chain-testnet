@@ -26,6 +26,41 @@ chmod +x stchaind
 ```
 
 #### 2. get the genesis and config file
+initialize the node
 ```bash
+./stchaind init --home ./  "<node mae you prefer>"
 
+# ignore the output since you need to download the genesis file 
 ```
+
+```bash
+wget https://raw.githubusercontent.com/stratosnet/stratos-chain-testnet/main/genesis.json
+wget https://raw.githubusercontent.com/stratosnet/stratos-chain-testnet/main/config.toml
+```
+
+change your node moniker in config.toml (optional if you don't want to become validator)
+```bash
+# A custom human readable name for this node
+moniker = "<node name you prefer>"
+```
+
+move the config.toml and genesis.json file to config folder
+```bash
+mv config.toml config/
+mv genesis.json config/
+```
+#### 3. run the node
+
+```bash
+./stchaind start --home ./ 
+```
+after this, the node will try to catch up with the blockchain to the latest block
+
+you can run the node in background
+```bash
+./stchaind start --home ./ 2>&1 >> chain.log &
+```
+
+
+#### for more info about get test token from faucet and send tx. 
+(TBA)
