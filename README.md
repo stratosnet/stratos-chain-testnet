@@ -25,6 +25,16 @@ chmod +x stchaincli
 chmod +x stchaind
 ```
 
+#### 1.1 compile the binary with source code
+Make sure you have Go 1.15+ installed ([link](https://golang.org/doc/install)). 
+
+```bash
+git clone https://github.com/stratosnet/stratos-chain.git
+cd stratos-chain
+make build
+```
+The binary can be found in ./build folder
+
 #### 2. get the genesis and config file
 initialize the node
 ```bash
@@ -95,3 +105,5 @@ check balance
 
 # then input y for the pop up to confirm send
 ```
+
+
