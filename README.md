@@ -63,4 +63,35 @@ you can run the node in background
 
 
 #### for more info about get test token from faucet and send tx. 
-(TBA)
+
+#### create an account
+```bash
+./stchaincli keys add --hd-path "m/44'/606'/0'/0/0" --keyring-backend test --home ./ wallet1
+```
+
+
+#### Faucet 
+faucet will be available at https://faucet-test.thestratos.org/
+get some test token 
+```bash
+curl -X POST https://faucet-test.thestratos.org/faucet/<your address>
+
+# expected result like 
+# Successfully send 100000000000ustos to <your address>
+```
+1 stos = 1000000000 ustos
+
+the faucet is default to send 100 stos to the provided address
+
+check balance
+```bash
+./stchaincli query account <your address> --home ./
+```
+
+#### send your first tx
+
+```bash
+./stchaincli tx send <from address> <to address> <amount> --home ./ --keyring-backend test --chain-id test-chain-1 
+
+# then input y for the pop up to confirm send
+```
