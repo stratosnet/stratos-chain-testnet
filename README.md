@@ -93,9 +93,11 @@ curl -X POST https://faucet-test.thestratos.org/faucet/<your address>
 
 the faucet is default to send 100 stos to the provided address
 
-check balance
+check balance (you need to wait for your node catching up with the network)
 ```bash
+
 ./stchaincli query account <your address> --home ./
+
 ```
 
 #### send your first tx
