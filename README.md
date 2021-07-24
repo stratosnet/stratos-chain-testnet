@@ -3,6 +3,15 @@ stratos block testnet genesis and config
 
 ## How to connect Stratos Chain Testnet
 
+### Prepare environment to run node
+
+#### 1. Create user account
+to create separated and more secure environment it is recommended to create separate user account to run node
+```
+sudo adduser stratos --home /home/stratos
+```
+once user is created login to system using *stratos* account and proceed with installation steps in context of that user
+
 ### Download release binary
 
 #### 1. get stchaind & stchaincli binary file
@@ -71,7 +80,6 @@ you can run the node in background
 ./stchaind start --home ./ 2>&1 >> chain.log &
 ```
 
-
 #### for more info about get test token from faucet and send tx. 
 
 #### create an account
@@ -108,4 +116,33 @@ check balance (you need to wait for your node catching up with the network)
 # then input y for the pop up to confirm send
 ```
 
+#### 4. run node as a service
+**NOTE:** All below steps require *root* privileges
 
+create file ```/lib/systemd/system/stratos.service``` with following content:
+```
+[Unit]
+Description=Stratos Node
+After=network-online.target
+
+[Service]
+User=stratos
+Group=stratos
+ExecStart=/home/stratos/stchaind start --home=/home/stratos/.stchaind
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=8192
+
+[Install]
+WantedBy=multi-user.target
+```
+once service file is created you need to enable and start service:
+```
+systemctl daemon-reload
+systemctl enable stratos.service
+systemctl start stratos.service
+```
+to check if service is runnign as expected:
+```
+systemctl status stratos.service
+```
