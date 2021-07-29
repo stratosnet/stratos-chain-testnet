@@ -175,7 +175,7 @@ seeds = "03c7cf4acca06a48431f29782c398ae0eba6cd8c@3.128.151.132:26656"
 persistent_peers = ""
 
 # UPNP port forwarding
-upnp = false
+upnp = true
 
 # Path to address book
 addr_book_file = "config/addrbook.json"
@@ -221,7 +221,7 @@ seed_mode = false
 private_peer_ids = ""
 
 # Toggle to disable guard against peers connecting from the same ip.
-allow_duplicate_ip = false
+allow_duplicate_ip = true
 
 # Peer connection configuration.
 handshake_timeout = "20s"
