@@ -39,7 +39,7 @@ The binary can be found in ./build folder
 #### 2. get the genesis and config file
 initialize the node
 ```bash
-./stchaind init --home ./  "<node mae you prefer>"
+./stchaind init --home ./  "<node name you prefer>"
 
 # ignore the output since you need to download the genesis file 
 ```
