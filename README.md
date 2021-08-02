@@ -31,6 +31,7 @@ Make sure you have Go 1.15+ installed ([link](https://golang.org/doc/install)).
 ```bash
 git clone https://github.com/stratosnet/stratos-chain.git
 cd stratos-chain
+git checkout v0.3.0
 make build
 ```
 The binary can be found in ./build folder
