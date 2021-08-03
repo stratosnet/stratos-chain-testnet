@@ -122,7 +122,7 @@ check balance (you need to wait for your node catching up with the network)
 create file ```/lib/systemd/system/stratos.service``` with following content:
 ```
 [Unit]
-Description=Stratos Node
+Description=Stratos Chanin Node
 After=network-online.target
 
 [Service]
