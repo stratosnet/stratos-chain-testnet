@@ -18,10 +18,10 @@ once user is created login to system using *stratos* account and proceed with in
 PLEASE NOTE: these binary are built using linux amd64, so if you are preparing run a node on different kernel, please follow step 1.1 to build binary for your machine
 
 ```bash
-wget https://github.com/stratosnet/stratos-chain/releases/download/v0.4.0/stchaincli
-wget https://github.com/stratosnet/stratos-chain/releases/download/v0.4.0/stchaind
+wget https://github.com/stratosnet/stratos-chain/releases/download/v0.3.0/stchaincli
+wget https://github.com/stratosnet/stratos-chain/releases/download/v0.3.0/stchaind
 ```
-then check the granularity 
+then check the granularity
 ```bash
 md5sum stchain*
 
@@ -37,12 +37,12 @@ chmod +x stchaind
 ```
 
 #### 1.1 compile the binary with source code
-Make sure you have Go 1.15+ installed ([link](https://golang.org/doc/install)). 
+Make sure you have Go 1.15+ installed ([link](https://golang.org/doc/install)).
 
 ```bash
 git clone https://github.com/stratosnet/stratos-chain.git
 cd stratos-chain
-git checkout v0.4.0
+git checkout v0.3.0
 make build
 ```
 The binary can be found in ./build folder
@@ -83,7 +83,7 @@ you can run the node in background
 ./stchaind start --home ./ 2>&1 >> chain.log &
 ```
 
-#### for more info about get test token from faucet and send tx. 
+#### for more info about get test token from faucet and send tx.
 
 #### create an account
 ```bash
@@ -91,9 +91,9 @@ you can run the node in background
 ```
 
 
-#### Faucet 
+#### Faucet
 faucet will be available at https://faucet-test.thestratos.org/
-get some test token 
+get some test token
 ```bash
 curl -X POST https://faucet-test.thestratos.org/faucet/<your address>
 
