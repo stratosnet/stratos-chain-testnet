@@ -47,6 +47,11 @@ make build
 ```
 The binary can be found in ./build folder
 
+you can also install the binary to $GOPATH/bin by
+```bash
+make install
+```
+
 #### 2. get the genesis and config file
 initialize the node
 ```bash
