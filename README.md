@@ -166,4 +166,5 @@ journalctl -u stratos.service -f
 
 ## Documents
 We collected all the documents [here](https://stratos.gitbook.io/st-docs/stratos-chain-english/stratos-chain-testnet/stratos-chain-testnet)
-For Chinese version, please refer to [Stratos-chain testnet 测试网说明]https://stratos.gitbook.io/st-docs/stratoschain-zhong-wen-ban/stratoschain-ce-shi-wang/stratoschain-testnet-ce-shi-wang-shuo-ming)
+
+For Chinese version, please refer to [Stratos-chain testnet 测试网说明](https://stratos.gitbook.io/st-docs/stratoschain-zhong-wen-ban/stratoschain-ce-shi-wang/stratoschain-testnet-ce-shi-wang-shuo-ming)
