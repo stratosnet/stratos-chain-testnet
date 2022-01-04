@@ -181,9 +181,12 @@ LimitNOFILE=8192
 WantedBy=multi-user.target
 ```
 > Note:
-> * If your login user account is not `stratos`, change `User=stratos` to `User=<your login user account>`
-> * If your login user group is not `stratos`, change `Group=stratos` to `User=<your login user group>`
-> * If the binary file `stchaind` is not saved under the folder `$HOME`, or the folder that holds your node info is not created under the folder `$HOME`, change `ExecStart=$HOME/stchaind start --home=$HOME/.stchaind` to `ExecStart=<path to the binary file 'stchaind'> start --home=<path to the folder '.stchaind'>`
+> In the [service] section, 
+> * `User` is your system login user account
+> * `Group` is user group
+> * `ExecStart` designates the path to the binary file stchaind
+> * `--home` designates the path to the node folder.
+Please modify these values according to your situations. Make sure the above values are correct.  
 
 ### Start service
 ```
