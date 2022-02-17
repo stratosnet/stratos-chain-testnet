@@ -474,8 +474,8 @@
       "last_resource_node_total_ustos": "0",
       "last_resource_node_ustoss": null,
       "resource_nodes": null,
-      "last_indexing_node_total_ustos": "0",
-      "last_indexing_node_ustoss": null,
+      "last_indexing_node_total_stakes": "0",
+      "last_indexing_node_stakes": null,
       "indexing_nodes": null
     },
     "upgrade": {},
