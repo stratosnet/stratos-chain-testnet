@@ -175,7 +175,7 @@ seeds = "b2a220bf37f59a6b25f53fb66772beb19a3f4e14@3.20.42.221:26656,e3818948f8ff
 persistent_peers = ""
 
 # UPNP port forwarding
-upnp = false
+upnp = true
 
 # Path to address book
 addr_book_file = "config/addrbook.json"
