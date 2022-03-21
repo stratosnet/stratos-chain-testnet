@@ -16,8 +16,8 @@ Once `user` is created, login the system using *stratos* account and proceed wit
 
 ```bash
 cd $HOME
-wget https://github.com/stratosnet/stratos-chain/releases/download/v0.6.1/stchaincli
-wget https://github.com/stratosnet/stratos-chain/releases/download/v0.6.1/stchaind
+wget https://github.com/stratosnet/stratos-chain/releases/download/v0.7.0/stchaincli
+wget https://github.com/stratosnet/stratos-chain/releases/download/v0.7.0/stchaind
 ```
 
 > These binary files are built using linux amd64, so if you are preparing run a node on different kernel, please follow step 1.1 to build binaries for your machine
@@ -29,8 +29,8 @@ wget https://github.com/stratosnet/stratos-chain/releases/download/v0.6.1/stchai
 md5sum stchain*
 
 ## expect output 
-## 55f7454c2998542d08fcd624f043c7db stchaincli
-## 9bf3a165386b6d5d5b056661b4da3cc5 stchaind
+## f15f7bc91214582cd2d8ec58e2103ce9 stchaincli
+## 296f5622062587f1a56a3dad681418c8 stchaind
 ```
 
 #### Add `execute` permission for the binary downloaded
@@ -45,7 +45,7 @@ chmod +x stchaind
 ```bash
 git clone https://github.com/stratosnet/stratos-chain.git
 cd stratos-chain
-git checkout v0.6.1
+git checkout v0.7.0
 make build
 ```
 The binary files `stchaincli` and `stchaind` can be found in `build` folder. Then, move these two binary files to `$HOME`
