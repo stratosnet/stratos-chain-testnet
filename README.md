@@ -29,8 +29,8 @@ wget https://github.com/stratosnet/stratos-chain/releases/download/v0.7.0/stchai
 md5sum stchain*
 
 ## expect output 
-## f15f7bc91214582cd2d8ec58e2103ce9 stchaincli
-## 296f5622062587f1a56a3dad681418c8 stchaind
+## 7d5fb6758f63c9c39ca2c336e25c759e stchaincli
+## fdb9277e456cd6f3880ff00a0baed876 stchaind
 ```
 
 #### Add `execute` permission for the binary downloaded
