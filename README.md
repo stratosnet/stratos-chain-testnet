@@ -12,11 +12,11 @@ Once `user` is created, login the system using *stratos* account and proceed wit
 
 ### 1. Download release binary files
 
-#### Get `stchaind` & `stchaincli` binary files
+- Get `stchaind` & `stchaincli` binary files
 
 ```bash
 cd $HOME
-wget https://github.com/stratosnet/stratos-chain/releases/download/v0.7.0/stchaincli
+wget https://github.com/stratosnet/stratos-chain/releases/download/v0.7.0/stchainclia
 wget https://github.com/stratosnet/stratos-chain/releases/download/v0.7.0/stchaind
 ```
 
@@ -24,7 +24,7 @@ wget https://github.com/stratosnet/stratos-chain/releases/download/v0.7.0/stchai
 >
 > For ease of use, we recommend you save these files in your `$HOME` folder. In the follwoing, we suppose you are in the `$HOME` folder.
 
-#### Check the granularity
+- Check the granularity
 ```bash
 md5sum stchain*
 
@@ -33,14 +33,14 @@ md5sum stchain*
 ## fdb9277e456cd6f3880ff00a0baed876 stchaind
 ```
 
-#### Add `execute` permission for the binary downloaded
+- Add `execute` permission to the binary downloaded
 ```bash
 chmod +x stchaincli
 chmod +x stchaind
 ```
 
 ### 1.1 Compile the binary with source code
-#### Make sure you have Go 1.16+ installed ([link](https://golang.org/doc/install)).
+Make sure you have Go 1.16+ installed ([link](https://golang.org/doc/install)).
 
 ```bash
 git clone https://github.com/stratosnet/stratos-chain.git
@@ -90,21 +90,97 @@ mv genesis.json .stchaind/config/
 
 ### 3. Run the node
 
-```bash
-./stchaind start 
-```
-After this, the node will try to catch up with the blockchain to the latest block.
+There are three ways to run your Stratos-chain full-node. Please choose ONE of them to start the node.
 
-You can run the node in background
-```bash
-./stchaind start 2>&1 >> chain.log &
-```
+- `stchaind start` command
+
+    ```shell
+    # Make sure we are inside the home directory
+    cd $HOME
+    
+    # run your node
+    ./stchaind start
+    
+    # Use `Ctrl+c` to stop the node.
+    ```
+
+- Run node in background
+
+    ```shell
+    # Make sure we are inside the home directory
+    cd $HOME
+    
+    # run your node in backend
+    ./stchaind start 2>&1 >> chain.log & 
+    ```
+  Use an editor to check your node log at `chain.log`
+
+  Use the following Linux Command to stop your node.
+    ```shell
+    pkill stchaind
+    ```
+- Run node as a service
+
+  All below steps require root privileges
+
+    - Create the service file
+      Create the `/lib/systemd/system/stratos.service` file with the following content
+
+      ```shell
+      [Unit]
+      Description=Stratos Chain Node
+      After=network-online.target
+  
+      [Service]
+      User=stratos
+      ExecStart=/home/stratos/stchaind start --home=/home/stratos/.stchaind
+      Restart=on-failure
+      RestartSec=3
+      LimitNOFILE=8192
+  
+      [Install]
+      WantedBy=multi-user.target
+      ```
+      > In the [service] section
+      > - `User` is your system login username
+      > - `ExecStart` designates the absolute path to the binary executable `stchaind`
+      > - `--home` is the absolute path to your node folder.
+      > - We used the default values for these variables. If you use a different username, group or folder to hold your node data instead of the default values, please modify these values according to your situations. Make sure the above values are correct.
+
+    - Start your service
+      Once you have successfully created the service, you need to enable and start it by running
+
+            ```shell
+      systemctl daemon-reload
+      systemctl enable stratos.service
+      systemctl start stratos.service
+      ```
+  - Service operations
+
+      - Check the service status
+
+        ```shell
+        systemctl status stratos.service
+        ```
+      - Check service log
+
+        ```shell
+        journalctl -u stratos.service -f 
+    
+        # exit with ctrl+c
+        ```
+
+      - Stop the service
+
+        ```shell
+        systemctl stop stratos.service
+        ```
 
 ## Operations
-Once the node finishes catch-up, you can operate the node for various transactions(tx) and queries. You can find all the documents [here](https://stratos.gitbook.io/st-docs/).
+Once the node finishes catch-up, you can operate the node for various transactions(tx) and queries. You can find all the documents [here](https://github.com/stratosnet/stratos-chain/wiki).
 
-In the following, we list some of commonly-used operations.
-  
+In the following, some of commonly-used operations are listed.
+
 ### Create an account
 
 ```bash
@@ -125,7 +201,7 @@ curl -X POST https://faucet-tropos.thestratos.org/faucet/<your wallet address>
 ```
 
 > * 1 stos = 1000000000 ustos
-> * By default, faucet will send 100stos(100,000,000,000ustos) to the given wallet address
+> * By default, faucet will send a certain amount of tokens to the given wallet address
 > * maximum 3 faucet requests to arbitrary wallet address from a single IP within an hour
 > * maximum 1 faucet request to a fixed wallet address within an hour
 
@@ -151,63 +227,23 @@ $ ./stchaincli tx send st1qzx8na3ujlaxstgcyguudaecr6mpsemflhhzua st1jvf660xagmzu
 # then input y for the pop up to confirm send
 ```
 > * In testing phase, --keyring-backend="test"
-> * In testing phase, the current `chain-id` may change when updating. When it is applied, user needs to point out `current chain-id` which can be found on [this page](https://big-dipper-test.thestratos.org/), right next to the search bar at the top of the page.
+> * In testing phase, the current `chain-id` may change when updating. When it is applied, user needs to point out `current chain-id` which can be found on [this page](https://explorer-tropos.thestratos.org/), right next to the search bar at the top of the page.
 
 ### Becoming a validator(optional)
-After the following steps have been done, Any participant in the network can signal that they want to become a validator. Please refer to [How to Become a Validator](https://stratos.gitbook.io/st-docs/stratos-chain-english/stratos-chain-commands/how-to-become-a-validator) for more details about validator creation, delegation as well as FAQ.
+After the following steps have been done, Any participant in the network can signal that they want to become a validator. Please refer to [How to Become a Validator](https://github.com/stratosnet/stratos-chain/wiki/How-to-Become-a-Validator) for more details about validator creation, delegation as well as FAQ.
 - [x] download related files
 - [x] start your node to catch up to the latest block height(synchronization)
 - [x] create your Stratos Chain Wallet
 - [x] `Faucet` or `send` an amount of tokens to this wallet
 
-## Run node as a service
-> NOTE: All below steps require *root* privileges
 
-### Create the `/lib/systemd/system/stratos.service` file with the following content
+## References
+* ['stchaincli' Commands(Part1)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaincli%60-Commands(Part1))
 
-```
-[Unit]
-Description=Stratos Chain Node
-After=network-online.target
+* [stchaincli' Commands(Part2)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaincli%60-Commands(Part2))
 
-[Service]
-User=stratos
-Group=stratos
-ExecStart=/home/stratos/stchaind start --home=/home/stratos/.stchaind
-Restart=on-failure
-RestartSec=3
-LimitNOFILE=8192
+* ['stchaind' Commands](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaind%60-Commands)
 
-[Install]
-WantedBy=multi-user.target
-```
-> Note:
-> In the [service] section, 
-> * `User` is your system login user account
-> * `Group` is user group
-> * `ExecStart` designates the path to the binary file stchaind
-> * `--home` designates the path to the node folder.
+* [REST APIs](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-REST-APIs)
 
-Please modify these values according to your situations. Make sure the above values are correct.  
-
-### Start service
-```
-systemctl daemon-reload
-systemctl enable stratos.service
-systemctl start stratos.service
-```
-
-### Check if service is running as expected
-```
-systemctl status stratos.service
-```
-
-### Check the node log
-```
-journalctl -u stratos.service -f 
-# exit with ctrl+c
-```
-## Documents
-More details are available at [here](https://stratos.gitbook.io/st-docs/stratos-chain-english/stratos-chain-testnet/stratos-chain-testnet)
-
-For Chinese version, please refer to [Stratos-chain testnet 测试网说明](https://stratos.gitbook.io/st-docs/stratoschain-zhong-wen-ban/stratoschain-ce-shi-wang/stratoschain-testnet-ce-shi-wang-shuo-ming)
+* [How to become a validator](https://github.com/stratosnet/stratos-chain/wiki/How-to-Become-a-Validator)
