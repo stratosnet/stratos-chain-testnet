@@ -12,12 +12,11 @@ Once `user` is created, login the system using *stratos* account and proceed wit
 
 ### 1. Download release binary files
 
-- Get `stchaind` & `stchaincli` binary files
+#### Get `stchaind`  binary files
 
 ```bash
 cd $HOME
-wget https://github.com/stratosnet/stratos-chain/releases/download/v0.7.0/stchaincli
-wget https://github.com/stratosnet/stratos-chain/releases/download/v0.7.0/stchaind
+wget https://github.com/stratosnet/stratos-chain/releases/download/v0.8.0/stchaind
 ```
 
 > These binary files are built using linux amd64, so if you are preparing run a node on different kernel, please follow step 1.1 to build binaries for your machine
@@ -29,13 +28,11 @@ wget https://github.com/stratosnet/stratos-chain/releases/download/v0.7.0/stchai
 md5sum stchain*
 
 ## expect output 
-## 7d5fb6758f63c9c39ca2c336e25c759e stchaincli
-## fdb9277e456cd6f3880ff00a0baed876 stchaind
+## 834c713f15752e9f68489a43bac6a180 stchaind
 ```
 
 - Add `execute` permission to the binary downloaded
 ```bash
-chmod +x stchaincli
 chmod +x stchaind
 ```
 
@@ -45,13 +42,12 @@ Make sure you have Go 1.16+ installed ([link](https://golang.org/doc/install)).
 ```bash
 git clone https://github.com/stratosnet/stratos-chain.git
 cd stratos-chain
-git checkout v0.7.0
+git checkout v0.8.0
 make build
 ```
-The binary files `stchaincli` and `stchaind` can be found in `build` folder. Then, move these two binary files to `$HOME`
+The binary file `stchaind` can be found in `build` folder. Then, move these two binary files to `$HOME`
 
 ```shell
-mv build/stchaincli ./
 mv build/stchaind ./
 ```
 
@@ -86,7 +82,7 @@ moniker = "<node name you prefer>"
 mv config.toml .stchaind/config/
 mv genesis.json .stchaind/config/
 ```
-> By default, the two binary executable files `stchaincli` and `stchaind` as well as the directory `.stchaind` have been saved or created in the `$HOME` folder. The `.stchaind` folder contains the node's configurations and data.
+> By default, the two binary executable files `stchaind` as well as the directory `.stchaind` have been saved or created in the `$HOME` folder. The `.stchaind` folder contains the node's configurations and data.
 
 ### 3. Run the node
 
@@ -184,20 +180,20 @@ In the following, some of commonly-used operations are listed.
 ### Create an account
 
 ```bash
-./stchaincli keys add --hd-path "m/44'/606'/0'/0/0" --keyring-backend test  <your wallet name>
+./stchaind keys add --hd-path "m/44'/606'/0'/0/0" --keyring-backend test  <your wallet name>
 ```
 
 Example
 ```bash
-./stchaincli keys add --hd-path "m/44'/606'/0'/0/0" --keyring-backend test  wallet1
+./stchaind keys add --hd-path "m/44'/606'/0'/0/0" --keyring-backend test  wallet1
 ```
-> After executed the above command, a `.stchaincli` will be created in your `$HOME` folder. The `.stchaincli` contains your wallet information with its address.
+> After executed the above command, a `.stchaind` will be created in your `$HOME` folder.
 
 ### `Faucet`
 Faucet will be available at https://faucet-tropos.thestratos.org/ to get test tokens
 
 ```bash
-curl -X POST https://faucet-tropos.thestratos.org/faucet/<your wallet address>
+curl --header "Content-Type: application/json" --request POST --data '{"denom":"ustos","address":"put_your_wallet_address_here"} ' https://faucet-tropos.thestratos.org/credit
 ```
 
 > * 1 stos = 1000000000 ustos
@@ -207,22 +203,22 @@ curl -X POST https://faucet-tropos.thestratos.org/faucet/<your wallet address>
 
 Check balance (you need to wait for your node catching up with the network)
 ```bash
-./stchaincli query account <your wallet address>
+./stchaind query account <your wallet address>
 ```
 
 Check node status
 ```bash
-./stchaincli status
+./stchaind status
 ```
 
 ### Your first tx - `send` transaction
 
 ```bash
-./stchaincli tx send <from address> <to address> <amount> --keyring-backend=<keyring's backend> --chain-id=<current chain-id>
+./stchaind tx send <from address> <to address> <amount> --keyring-backend=<keyring's backend> --chain-id=<current chain-id>
 ```
 
 ```bash
-$ ./stchaincli tx send st1qzx8na3ujlaxstgcyguudaecr6mpsemflhhzua st1jvf660xagmzuzyqyqu3w27sj0ragn7qetnwmyr 100000000000ustos --keyring-backend=test --chain-id=stratos-testnet-3 --gas=auto
+$ ./stchaind tx send st1qzx8na3ujlaxstgcyguudaecr6mpsemflhhzua st1jvf660xagmzuzyqyqu3w27sj0ragn7qetnwmyr 100000000000ustos --keyring-backend=test --chain-id=stratos-testnet-3 --gas=auto
 
 # then input y for the pop up to confirm send
 ```
@@ -238,11 +234,9 @@ After the following steps have been done, Any participant in the network can sig
 
 
 ## References
-* ['stchaincli' Commands(Part1)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaincli%60-Commands(Part1))
+* ['stchaind' Commands(Part1)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaind%60-Commands(Part1))
 
-* [stchaincli' Commands(Part2)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaincli%60-Commands(Part2))
-
-* ['stchaind' Commands](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaind%60-Commands)
+* [stchaind' Commands(Part2)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaind%60-Commands(Part2))
 
 * [REST APIs](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-REST-APIs)
 
