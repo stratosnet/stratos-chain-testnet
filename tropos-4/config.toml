@@ -15,7 +15,7 @@
 proxy_app = "tcp://127.0.0.1:26658"
 
 # A custom human readable name for this node
-moniker = "fullnode1"
+moniker = "<node-name>"
 
 # If this node is many blocks behind the tip of the chain, FastSync
 # allows them to catchup quickly by downloading blocks in parallel
@@ -209,10 +209,10 @@ laddr = "tcp://0.0.0.0:26656"
 external_address = ""
 
 # Comma separated list of seed nodes to connect to
-seeds = ""
+seeds = "c2f962cbeda7cf1be0db11996d0766a87181e044@3.20.42.221:26656,f672a826ac72eb8838542346606da8f8af34e402@3.114.5.73:26656"
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = "f4ec830cfeb0e74de5507c4d2af34e24228d5b40@172.32.1.103:26656,b50e3be837ad74fbea9612031397f7b109c4b663@172.32.2.221:26656,b50e3be837ad74fbea9612031397f7b109c4b663@172.32.1.136:26656,b50e3be837ad74fbea9612031397f7b109c4b663@172.32.1.93:26656,b50e3be837ad74fbea9612031397f7b109c4b663@172.32.2.65:26656,b50e3be837ad74fbea9612031397f7b109c4b663@172.32.1.10:26656,b50e3be837ad74fbea9612031397f7b109c4b663@172.32.2.113:26656,b50e3be837ad74fbea9612031397f7b109c4b663@172.32.1.65:26656,b50e3be837ad74fbea9612031397f7b109c4b663@172.32.2.205:26656,d4d99bce14f071381c65c3f839d515c08bce0631@18.116.249.76:26656,8818c8a655081fbe5a4a44cf079a5a7f61d26d72@35.84.99.66:26656,5d91a65f0e0ba06d351b5ad22abc055ae7706484@54.189.208.239:26656,bd1c9b8e8e39067c46121fc430d82b0ad587cdab@52.194.30.100:26656,6657b575493e00a2e52a20bbe25780e8a5cc3190@18.178.110.255:26656,fc2328a83c551bd34503d029feca6bea38375380@3.10.192.104:26656"
+persistent_peers = ""
 
 # UPNP port forwarding
 upnp = false
@@ -225,10 +225,10 @@ addr_book_file = "config/addrbook.json"
 addr_book_strict = true
 
 # Maximum number of inbound peers
-max_num_inbound_peers = 40
+max_num_inbound_peers = 80
 
 # Maximum number of outbound peers to connect to, excluding persistent peers
-max_num_outbound_peers = 10
+max_num_outbound_peers = 20
 
 # List of node IDs, to which a connection will be (re)established ignoring any existing limits
 unconditional_peer_ids = ""
@@ -249,7 +249,7 @@ send_rate = 5120000
 recv_rate = 5120000
 
 # Set true to enable the peer-exchange reactor
-pex = false
+pex = true
 
 # Seed mode, in which node constantly crawls the network and looks for
 # peers. If another node asks it for addresses, it responds and disconnects.
@@ -258,7 +258,7 @@ pex = false
 seed_mode = false
 
 # Comma separated list of peer IDs to keep private (will not be gossiped to other peers)
-private_peer_ids = "c2f962cbeda7cf1be0db11996d0766a87181e044,f672a826ac72eb8838542346606da8f8af34e402,40c8bc6f6bfaea4a3532438422f45dec7b6e5a5e,318238f342268ef372ef432ad8d7feb2a0c08735,f56c9b00349dc5d604574ba1fc532f784020a32e,adad2d3132761c5732e716d5fdb3c3e79b3134fd,f4ec830cfeb0e74de5507c4d2af34e24228d5b40,b50e3be837ad74fbea9612031397f7b109c4b663,b50e3be837ad74fbea9612031397f7b109c4b663,b50e3be837ad74fbea9612031397f7b109c4b663,b50e3be837ad74fbea9612031397f7b109c4b663,b50e3be837ad74fbea9612031397f7b109c4b663,b50e3be837ad74fbea9612031397f7b109c4b663,b50e3be837ad74fbea9612031397f7b109c4b663,b50e3be837ad74fbea9612031397f7b109c4b663"
+private_peer_ids = ""
 
 # Toggle to disable guard against peers connecting from the same ip.
 allow_duplicate_ip = false
