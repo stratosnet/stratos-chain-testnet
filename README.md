@@ -234,11 +234,9 @@ After the following steps have been done, Any participant in the network can sig
 
 
 ## References
-* ['stchaincli' Commands(Part1)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaincli%60-Commands(Part1))
+* ['stchaind' Commands(Part1)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaind%60-Commands(Part1))
 
-* [stchaincli' Commands(Part2)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaincli%60-Commands(Part2))
-
-* ['stchaind' Commands](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaind%60-Commands)
+* [stchaind' Commands(Part2)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaind%60-Commands(Part2))
 
 * [REST APIs](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-REST-APIs)
 
