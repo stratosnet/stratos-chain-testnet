@@ -1,5 +1,7 @@
 # stratos-chain-testnet
-stratos block testnet genesis and config
+Stratos block testnet genesis and config. 
+
+The latest version is v0.9.0, with a new chain-id `tropos-5`.
 
 ## Prepare environment to run node
 
@@ -16,19 +18,20 @@ Once `user` is created, login the system using *stratos* account and proceed wit
 
 ```bash
 cd $HOME
-wget https://github.com/stratosnet/stratos-chain/releases/download/v0.8.0/stchaind
+wget https://github.com/stratosnet/stratos-chain/releases/tag/v0.9.0
 ```
 
-> These binary files are built using linux amd64, so if you are preparing run a node on different kernel, please follow step 1.1 to build binaries for your machine
+> These binary files are built using linux amd64, so if you prefer to run a node on a different kernel, please follow step 1.1 to build binaries.
 >
 > For ease of use, we recommend you save these files in your `$HOME` folder. In the following, we suppose you are in the `$HOME` folder.
 
 - Check the granularity
 ```bash
+# Check granularity
 md5sum stchain*
 
-## expect output 
-## 834c713f15752e9f68489a43bac6a180 stchaind
+## Expected output
+## 1843b162a7d2b1f4363938fc73d421e8  stchaind
 ```
 
 - Add `execute` permission to the binary downloaded
@@ -37,13 +40,13 @@ chmod +x stchaind
 ```
 
 ### 1.1 Compile the binary with source code
-Make sure you have Go 1.16+ installed ([link](https://golang.org/doc/install)).
+Make sure you have Go 1.18+ installed ([link](https://golang.org/doc/install)).
 
 ```bash
-git clone https://github.com/stratosnet/stratos-chain.git
-cd stratos-chain
-git checkout v0.8.0
-make build
+ git clone https://github.com/stratosnet/stratos-chain.git
+ cd stratos-chain
+ git checkout tags/v0.9.0
+ make build
 ```
 The binary file `stchaind` can be found in `build` folder. Then, move these two binary files to `$HOME`
 
@@ -146,36 +149,36 @@ There are three ways to run your Stratos-chain full-node. Please choose ONE of t
     - Start your service
       Once you have successfully created the service, you need to enable and start it by running
 
-            ```shell
+      ```shell
       systemctl daemon-reload
       systemctl enable stratos.service
       systemctl start stratos.service
       ```
-  - Service operations
+    - Service operations
 
-      - Check the service status
+        - Check the service status
 
-        ```shell
-        systemctl status stratos.service
-        ```
-      - Check service log
+          ```shell
+          systemctl status stratos.service
+          ```
+        - Check service log
 
-        ```shell
-        journalctl -u stratos.service -f 
-    
-        # exit with ctrl+c
-        ```
+          ```shell
+          journalctl -u stratos.service -f 
+      
+          # exit with ctrl+c
+          ```
 
-      - Stop the service
+        - Stop the service
 
-        ```shell
-        systemctl stop stratos.service
-        ```
+          ```shell
+          systemctl stop stratos.service
+          ```
 
 ## Operations
-Once the node finishes catch-up, you can operate the node for various transactions(tx) and queries. You can find all the documents [here](https://github.com/stratosnet/stratos-chain/wiki).
+Once the node finishes catching-up, you can operate the node for various transactions(tx) and queries. 
 
-In the following, some of commonly-used operations are listed.
+In the following, we list some of commonly-used operations. More details and examples can be found [here](https://github.com/stratosnet/sds/wiki).
 
 ### Create an account
 
@@ -193,13 +196,8 @@ Example
 Faucet will be available at https://faucet-tropos.thestratos.org/ to get test tokens
 
 ```bash
-curl --header "Content-Type: application/json" --request POST --data '{"denom":"ustos","address":"put_your_wallet_address_here"} ' https://faucet-tropos.thestratos.org/credit
+curl --header "Content-Type: application/json" --request POST --data '{"denom":"wei","address":"your wallet address"} ' https://faucet-tropos.thestratos.org/credit
 ```
-
-> * 1 stos = 1000000000 ustos
-> * By default, faucet will send a certain amount of tokens to the given wallet address
-> * maximum 3 faucet requests to arbitrary wallet address from a single IP within an hour
-> * maximum 1 faucet request to a fixed wallet address within an hour
 
 Check balance (you need to wait for your node catching up with the network)
 ```bash
@@ -211,22 +209,25 @@ Check node status
 ./stchaind status
 ```
 
-### Your first tx - `send` transaction
+### Try your first tx - `send` transaction
 
 ```bash
-./stchaind tx send <from address> <to address> <amount> --keyring-backend=<keyring's backend> --chain-id=<current chain-id>
+./stchaind tx send <from account address | name> <to address> <amount> --keyring-backend=<keyring's backend> --chain-id=<current chain-id> --gas=<gas amount> --gas-prices=<gas-price>
 ```
 
 ```bash
-$ ./stchaind tx send st1qzx8na3ujlaxstgcyguudaecr6mpsemflhhzua st1jvf660xagmzuzyqyqu3w27sj0ragn7qetnwmyr 100000000000ustos --keyring-backend=test --chain-id=stratos-testnet-3 --gas=auto
-
+./stchaind tx bank send user0 st1sqzsk8mplv5248gx6dddzzxweqvew8rtst96fx 1gwei --chain-id=tropos-5  --keyring-backend=test --gas=auto --gas-prices=10000000wei
 # then input y for the pop up to confirm send
 ```
 > * In testing phase, --keyring-backend="test"
-> * In testing phase, the current `chain-id` may change when updating. When it is applied, user needs to point out `current chain-id` which can be found on [this page](https://explorer-tropos.thestratos.org/), right next to the search bar at the top of the page.
+> * In testing phase, `chain-id` may change when updating, which can be found on [this page](https://explorer-tropos.thestratos.org/), right next to the search bar at the top of the page.
+    The current `chain-id` is `tropos-5`. 
 
 ### Becoming a validator(optional)
-After the following steps have been done, Any participant in the network can signal that they want to become a validator. Please refer to [How to Become a Validator](https://github.com/stratosnet/stratos-chain/wiki/How-to-Become-a-Validator) for more details about validator creation, delegation as well as FAQ.
+After the following steps have been done, Any participant in the network can signal that they want to become a validator. 
+Please refer to [How to Become a Validator](https://github.com/stratosnet/stratos-chain/wiki/How-to-Become-a-Validator) 
+for more details about validator creation, delegation as well as FAQ.
+
 - [x] download related files
 - [x] start your node to catch up to the latest block height(synchronization)
 - [x] create your Stratos Chain Wallet
@@ -234,10 +235,16 @@ After the following steps have been done, Any participant in the network can sig
 
 
 ## References
-* ['stchaind' Commands(Part1)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaind%60-Commands(Part1))
+* [Tropos Incentive Testnet](https://github.com/stratosnet/sds/wiki/Tropos-Incentive-Testnet)
 
-* [stchaind' Commands(Part2)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaind%60-Commands(Part2))
+* ['stchaind' Commands(part1)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaind%60-Commands(part1))
+
+* [stchaind' Commands(part2)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaind%60-Commands(part2))
+
+* [gRPC Queries](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-gRPC-Queries)
 
 * [REST APIs](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-REST-APIs)
 
 * [How to become a validator](https://github.com/stratosnet/stratos-chain/wiki/How-to-Become-a-Validator)
+
+* [`ppd terminal` subcommand](https://github.com/stratosnet/sds/wiki/%60ppd-terminal%60--subcommands)
