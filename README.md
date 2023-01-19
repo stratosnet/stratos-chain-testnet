@@ -196,7 +196,7 @@ Example
 Faucet will be available at https://faucet-tropos.thestratos.org/ to get test tokens
 
 ```bash
-curl --header "Content-Type: application/json" --request POST --data '{"denom":"wei","address":"your wallet address"} ' https://faucet-tropos.thestratos.org/credit
+curl --header "Content-Type: application/json" --request POST --data '{"denom":"stos","address":"your wallet address"} ' https://faucet-tropos.thestratos.org/credit
 ```
 
 Check balance (you need to wait for your node catching up with the network)
