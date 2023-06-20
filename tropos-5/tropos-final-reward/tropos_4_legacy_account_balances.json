@@ -1,0 +1,1226 @@
+[
+  {
+    "address": "st1jy3j2mrna26p5ypfuzvl6788n5smq3qaz605s0",
+    "coins": [
+      {
+        "amount": "161412429580251851",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st194hg5tsaa9lvgtnddmrpqcgmzfvrfgl76krwhm",
+    "coins": [
+      {
+        "amount": "254036583232995735",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1nd3gdnneq60ns3jp37gumrwq0m33v9xc2vy5se",
+    "coins": [
+      {
+        "amount": "432136262634357107",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st15dtma5jyhcmuyp6vp2x4jhtfusl9s204rlk8hp",
+    "coins": [
+      {
+        "amount": "663477532642907319",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1msmphmv7q9j0hck6hzhq69vv8t0sqjwjjccslq",
+    "coins": [
+      {
+        "amount": "1016959974713242712",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1wf50v58xk7qtvg8jf4sccxu8h5ehzm63342nrp",
+    "coins": [
+      {
+        "amount": "217959781458855008",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st13wqahln0utz3ltfpa7fc7l9a7pstp4gxkz7jy7",
+    "coins": [
+      {
+        "amount": "53550265385982053",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1kcgrnu4m6sz3pryxsvmjdv2cte53g2v5j20wup",
+    "coins": [
+      {
+        "amount": "308172293229380701",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1hwtjuzd5p62x3e634zwc77xlpeldyexzp95u2e",
+    "coins": [
+      {
+        "amount": "279655018436492663",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1ryehcrh4sguntqzur4j52nz08muqdpy30u79fa",
+    "coins": [
+      {
+        "amount": "4381886155340843923",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1d0y0u43s09xgwskv7km4wzhyea6f9gt7p6mk6y",
+    "coins": [
+      {
+        "amount": "704519567323462747",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1gct90a0r2esgamt2krcjq6wk0s4d4tkgexsms0",
+    "coins": [
+      {
+        "amount": "646949792097982",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1vacrvr8gy7c3kc6x5u6lawpadljkltc73fkk3m",
+    "coins": [
+      {
+        "amount": "38052638950159793",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1nhdprm8qjkq50asvusm24ly5zu3uh0gpchjz9g",
+    "coins": [
+      {
+        "amount": "8152187649153426",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st15vnpy8lnw3azm8nyxdjz3c0usewwxfe8s3ngv0",
+    "coins": [
+      {
+        "amount": "641858777595342685",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1hl6dmtvy0l938h77eal06sg4l2r2zs52qgxlem",
+    "coins": [
+      {
+        "amount": "1190624609400151172",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1ak9skkwz0saeauj90rlt8t82q7xcl907w4n50a",
+    "coins": [
+      {
+        "amount": "667735880193076697",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st18epk2rxp4lpgagdjtsywyvkm80l2nk4963rwqy",
+    "coins": [
+      {
+        "amount": "569379798210177588",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st18ahgsrun7ljd3swvrlfdha07ug7mw7z4dmy9de",
+    "coins": [
+      {
+        "amount": "15438159210630355",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1hd0kem09pynn3l9etkl28yg7was36q40tsh9ua",
+    "coins": [
+      {
+        "amount": "148977927551691154",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1hhecaslxteqwl0943ravrse7tan8nsqq97lmjc",
+    "coins": [
+      {
+        "amount": "9835823542663544173",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st163k30wp7u243gsl6ksvafujl0njknsytxme8dv",
+    "coins": [
+      {
+        "amount": "955154253089999736",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1qte4520u0yl4zqvxh8agyyrc9xpa5vjwxdlsn0",
+    "coins": [
+      {
+        "amount": "289694096145369663",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1q3upnz6pxfyspp2d7ke209gyq88fe43ea9p7xv",
+    "coins": [
+      {
+        "amount": "108176700939872209",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1d4r3a8z9zh5ugn3xejshku0emfwa0p6nhkq0ch",
+    "coins": [
+      {
+        "amount": "427922130222296958",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1uvl5jex3zt20n65zv78mgxh5t7r7lqky6dcswp",
+    "coins": [
+      {
+        "amount": "884542876081026535",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1886gduvecsjq036he3kshpvs2dry54p62sx5sk",
+    "coins": [
+      {
+        "amount": "613412341115605315",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st14dkrjzlr23zyzhqz6s655kteg4r4m2a75yh5dj",
+    "coins": [
+      {
+        "amount": "997590564063483316",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1gu5lpqjdhetp3phwkpv26857gas3nn0awgm9qn",
+    "coins": [
+      {
+        "amount": "59712224363810102",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1dq84s5spsk72u8c00fyykc0k9l6y3cyjjg5xv3",
+    "coins": [
+      {
+        "amount": "69793500776665875",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st15rfa7r2u6w7a7cstxyqr4v76wffru9pje3lnhv",
+    "coins": [
+      {
+        "amount": "267160204353828219",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st14u7t22aj4dv6lhvsaauvzd8r2l9eckm84gwlp2",
+    "coins": [
+      {
+        "amount": "1080890552299220072",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1hs7khgm5t9n6uxt9ycwu5m2khgqca4l6s0f0t5",
+    "coins": [
+      {
+        "amount": "863703885084417138",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st19d2wtdthtr3nksjanthzqwxdmkv5xen607p0e0",
+    "coins": [
+      {
+        "amount": "643820460931551273",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st12pcx29m95fe2rlqlw05cycuhcjuu82x2r5f9z9",
+    "coins": [
+      {
+        "amount": "94712133606462919",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1sd7djpj8a43kv4lgez49jnwgd0h95wlj5j8cpt",
+    "coins": [
+      {
+        "amount": "481864438055591832",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1sltf7k82xrse4ka8pjxyuz20dpl64f4v230cpc",
+    "coins": [
+      {
+        "amount": "187798359566599648",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1h9mgkasnkd5h8lh9uskg67zwzgmhxe3jtj4zp8",
+    "coins": [
+      {
+        "amount": "137608469836875877",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st13hrhrszlps3uktg0wdmq2ua7g7dlu5m4jg0lem",
+    "coins": [
+      {
+        "amount": "1142871704601208841",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st14lg65yac7werht5z5jv4jdj5qsuwymgwmap6t4",
+    "coins": [
+      {
+        "amount": "613536268150193666",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st16fuvqecpk93aftp98umsteclv4fk4gdl0qq6kw",
+    "coins": [
+      {
+        "amount": "685292642056207342",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1gykjzxnx2cjpfysw5djxvyc2a5wphnfwytjh2q",
+    "coins": [
+      {
+        "amount": "6318781014510764677",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1gj3uggvvc2dpx66mfsjxjyjdk6nc60y66ugh4k",
+    "coins": [
+      {
+        "amount": "6623236776222709",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1f9av2mc876h6j05qm6udgtf5u0l4hh4ktsya2x",
+    "coins": [
+      {
+        "amount": "7276941031247171497",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1vvesfyt2t4z2q4adklun60wjvlvx45e4q0p7gc",
+    "coins": [
+      {
+        "amount": "52369241552686213",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1wsflrvtnr0lha6c2rp8htpmanauz7j8ujl9jym",
+    "coins": [
+      {
+        "amount": "922360992404677000",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st162q6m2cneu66wwwmkv3twn3fta55ge592vtfuv",
+    "coins": [
+      {
+        "amount": "664696642891334399",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st14rxyr823qsfgd9eqpunnywd6gu27tz8ddjyz3x",
+    "coins": [
+      {
+        "amount": "891965796621976988",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st163lxtd93ets929nz07y6x0xgd2dvl3934pu056",
+    "coins": [
+      {
+        "amount": "879904527396377189",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1w40dlnq37k5c0yzs5mv02wnl04t9ndhqe6dllj",
+    "coins": [
+      {
+        "amount": "127051452894296787",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1e2dtu37q46d6vh6hc3ef0xuj4dgkqw58tylplj",
+    "coins": [
+      {
+        "amount": "352993153358557558",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1etphus0d2l9kupzzfrad658gznwvydng09elct",
+    "coins": [
+      {
+        "amount": "632565989069557667",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1qeq27jhv6rekfc80mtlqpwg7kmk2c0nqz6awq2",
+    "coins": [
+      {
+        "amount": "142432622680784902",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1pkzac5zacxd6hywf7petznv8ejnsxlkkewg6wf",
+    "coins": [
+      {
+        "amount": "158262130772689220",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1zzlza2vvr8ygpxtjwyhewszfhxcn9chyf3u2qq",
+    "coins": [
+      {
+        "amount": "805871539336939527",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st10slw58gmrdu9ny2dfz5vsnj2w7m60lne9q4d3f",
+    "coins": [
+      {
+        "amount": "718855012005466158",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1n4s06ec4ydzc0g270657fchmpae30kyp6wr24p",
+    "coins": [
+      {
+        "amount": "19000941566335499",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1egrcm6dsjehvmr85kefekchj4yp5yp9vpg95ws",
+    "coins": [
+      {
+        "amount": "796295889541804049",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1av2e095hzcp07ep3ajf9uey4j39fvx6lcqux0e",
+    "coins": [
+      {
+        "amount": "20216900454386718",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1rr46qwhut83mar5dulx7mwkgp2jqkjfrrv9ycu",
+    "coins": [
+      {
+        "amount": "124051901938434460",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1fgyc0yle7axcat2l8f358dd5lv2xx40rxmuqla",
+    "coins": [
+      {
+        "amount": "199546880222323971",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1w3snpdzft87lhyp372p2rqazv9utxpw3n4ka8s",
+    "coins": [
+      {
+        "amount": "60562832790556207",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1nva7q2p90qkq8pz7k8q437xc4850f3zg58m32y",
+    "coins": [
+      {
+        "amount": "3943885678173435",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st15wdwk5edqf36s9ydkhy5lyywdunuug0rfxvl8h",
+    "coins": [
+      {
+        "amount": "666501952245737259",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1ej4wm4f5c2tu4rtxudfcfmwc0qw3y84kl8c7ta",
+    "coins": [
+      {
+        "amount": "571793814525430035",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1xqrvu50u3v6uwfdm96r3l4dpws5xwlhdkas9mq",
+    "coins": [
+      {
+        "amount": "139872246046544755",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1wxffh5urtkm9d774wk8n6vkxuk44cqzm679x7t",
+    "coins": [
+      {
+        "amount": "893460776399944097",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1hzml3yu0v3cz6hl4dyxnqqg0wmzqxtpthe03h5",
+    "coins": [
+      {
+        "amount": "626291848513132370",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st182celm4vcy0ts4xw80tcanepctkcx5wj75yjsh",
+    "coins": [
+      {
+        "amount": "589863554563787265",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1vdkemdddl7ymnfxdkzdhmewu4tly4x20avjr4c",
+    "coins": [
+      {
+        "amount": "722670613126407629",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1ka978qcuwxvg4zly6j5389lggghg8xsj009ypv",
+    "coins": [
+      {
+        "amount": "81498237651131184",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1hmmekly3hlhcgmgygmunh744ady4p7zpr0edut",
+    "coins": [
+      {
+        "amount": "336987129375311680",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1alle2wy87gv03ws9vgfnfmmdmvlenelaww09th",
+    "coins": [
+      {
+        "amount": "1049385543848747178",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st17m2wwt8hxg7yu7xnnex4dump8ee4aq4hdc2m8v",
+    "coins": [
+      {
+        "amount": "763365078766231977",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1lalerwpecynyam8xc0zku3vj567mvf865wtt9d",
+    "coins": [
+      {
+        "amount": "4457792043614612",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1xmww5eau5kfpzjdf0htrcxc4flz6slvszylt7f",
+    "coins": [
+      {
+        "amount": "102727893056935985",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1tc7cuc99sn6h9us50fpcde2f2umklgz5xwmu9f",
+    "coins": [
+      {
+        "amount": "167856350131624708",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1mtyvpnwgulslaev50sns5zlv72a0jugmjhudx7",
+    "coins": [
+      {
+        "amount": "42329427536156946",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1adqfd9xp2v9tj8kwm9hxw3r8taxnaszgyua8mq",
+    "coins": [
+      {
+        "amount": "100154643921891589",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st17jrtppwdv5wl7yx97x0x7d9zzctnxfnmkeertp",
+    "coins": [
+      {
+        "amount": "717918641773585541",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1lmnpw4tdgwvjuaytsew0jq4nfdys9l0xqwxe8d",
+    "coins": [
+      {
+        "amount": "327564696745229890",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1zem4dupeavlhs7uflvahp4dwf67gm6ztktm2gx",
+    "coins": [
+      {
+        "amount": "20274533730918178",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st12rxq2nrnree6d6qfasp4pged0h4sx4rzlzlx9k",
+    "coins": [
+      {
+        "amount": "498928797131806010",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1vwjhzmr9xqu27x2v7fu85wjy24mlps8a9vacj8",
+    "coins": [
+      {
+        "amount": "7746678865428786",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1j9kyd7maa5ed29d2je8ecwhm4ksxzx3l7mflm8",
+    "coins": [
+      {
+        "amount": "167335345627037593",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st19xc7vs44t6djjk0f3jumjw3sd84ca7x3zxp70u",
+    "coins": [
+      {
+        "amount": "151754451859391034",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1jck8rff9yxpqykyj0glm6mypmf8yctzvyltuv3",
+    "coins": [
+      {
+        "amount": "145330749000556505",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st15lutzvjntckdx75yd6rmhdlu696axucycys53u",
+    "coins": [
+      {
+        "amount": "15497896829575170",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st17a328wdknzqzje2nl9ry3frzut55fdp78g3qmz",
+    "coins": [
+      {
+        "amount": "786408333580648859",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1lgvx9jxfx5hlekc2pxhl6clw2kc5tcg0cw8mfk",
+    "coins": [
+      {
+        "amount": "60966464277742976",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1nqtlc4et2cxlaz3dpkza0ru550xe9dexw9ugcp",
+    "coins": [
+      {
+        "amount": "447548832956364112",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1eye8hy9aue3f0s3nddq4xw6fmsqpqxdtz5pk67",
+    "coins": [
+      {
+        "amount": "2613145248275280",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1emshnw9ktmnatsy5nvzxfptwypjkc29q9v0sdz",
+    "coins": [
+      {
+        "amount": "470588844258274095",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1p8eyk7mpj85jrk3ucyahm8chct3r5y7qkhew8h",
+    "coins": [
+      {
+        "amount": "12124485587491265",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1xvzqel0hc58uuv746d2mvgpu22eeuw9jj3g39s",
+    "coins": [
+      {
+        "amount": "319793472977820160",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1fzpphxkeehuj9zu3z0v2kzdvft9zpdl76pxyam",
+    "coins": [
+      {
+        "amount": "16321571276089277352",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1039grvw67ggtvx0sgzg0l6xac6ut90v3rmpfgx",
+    "coins": [
+      {
+        "amount": "169377795152856050",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1c6sf8re2ekxjgkkez6ckvh9qw72funsaz8l97s",
+    "coins": [
+      {
+        "amount": "564743422308649",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1ey7ulr5c8cste5wszpfupy0lc7e7n08r5s3ep9",
+    "coins": [
+      {
+        "amount": "557260522249410020",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1adte5ky9y62d4ws30n63p235np7tk3ceqnzpyr",
+    "coins": [
+      {
+        "amount": "710063675666491855",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1dez7m6pwqm6knavz2syz2ewf870jtvesvcwap6",
+    "coins": [
+      {
+        "amount": "472589257255739124",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1da9naeyuw8gnsjugrm2fmam8kxx5fw4rm6kawq",
+    "coins": [
+      {
+        "amount": "816335872758067981",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1c32evxsgkc8c67gtdtstahz0jxlgwvde8uxst9",
+    "coins": [
+      {
+        "amount": "96182039213959640",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st16ggxpm8e6zwsg95sxcamyfkd0ftulafahvmehg",
+    "coins": [
+      {
+        "amount": "762714583239013135",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1mur95c0jmz67vlw6hy099hjnf4lvfmfd64r53p",
+    "coins": [
+      {
+        "amount": "143821011846947028",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1y2plj2hfw5kkvdyq9f4kaj3ltlc0qw5vv923tk",
+    "coins": [
+      {
+        "amount": "238769262554291826",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st19pw5meu5u72r28q822ez9s6wacdcp0qleadudh",
+    "coins": [
+      {
+        "amount": "321190186755240646",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1gwcn40mpez30c60aa797y33fuc95yrwgqama4f",
+    "coins": [
+      {
+        "amount": "20337189904855182",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1a3kfrha8427pmzfsuc3kuka3uxh9cdjq5zjrn3",
+    "coins": [
+      {
+        "amount": "664317891266999614",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1rffw6xmwdk437vg6cvymrdsz65xg432dgdx9gf",
+    "coins": [
+      {
+        "amount": "212496759715970328",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1r6jl9ry6htxxzw3u2klqf2u3sxd544wvdj5qng",
+    "coins": [
+      {
+        "amount": "21085488387259502272",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1xc3e80jp225ptyqdaqy8leq02zz0mnz2k5c6vt",
+    "coins": [
+      {
+        "amount": "930155372123197897",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st184m0jmpj4lnu2703et3astlt7u4jq6kkvr7mn5",
+    "coins": [
+      {
+        "amount": "746974576691850583",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1mjjw6x60uegf9yk9hd2jfstvdsyf74vakj89y3",
+    "coins": [
+      {
+        "amount": "111193918126144774",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1qjayzxdgvpr3emxekdhmc7433xepjxpy3ezwnn",
+    "coins": [
+      {
+        "amount": "756719988900277040",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1qeldj86dlvrl90n3q240tqagv3yf3z2z68qcsm",
+    "coins": [
+      {
+        "amount": "755330686700500823",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1y322zgvdr25wpqey0q28z5nc8sfrym6yad4cgx",
+    "coins": [
+      {
+        "amount": "1270664818762201",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st13ypjk2krdcwgg9zpd5gw8k9tzusnruwz95mezm",
+    "coins": [
+      {
+        "amount": "190680358354043725",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1at3ylxe3f08l8ned93kzqpv4ehqvn0twmx05xp",
+    "coins": [
+      {
+        "amount": "629903770689581049",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1r9f5caj062w4qxghpds00sgtg0djzws87ny2dg",
+    "coins": [
+      {
+        "amount": "402129929747317126",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st122xdafe9055n8jh2jm6ymaxmtwvzm0tpglthpc",
+    "coins": [
+      {
+        "amount": "564739784724529",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1mcac9rnsgvzqjx0w655tfd3e7ulxfk8dd8y6cx",
+    "coins": [
+      {
+        "amount": "10439522369242738",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1q0w7l7rvsp8kcfnxwxzyhesjvuvvm93hl2e2cc",
+    "coins": [
+      {
+        "amount": "341563620638870347",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st18gd77xnpedylqgtjvjyh0ctfajkrsdlp2afgzv",
+    "coins": [
+      {
+        "amount": "407120293206756072",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1w95p59sp2kkzncs4ryde6c0s7j4a4vxy4w0zfl",
+    "coins": [
+      {
+        "amount": "41137754372218129",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st170e2u49pz4y2mq8ep8la0vs65hyynh8hr37t7w",
+    "coins": [
+      {
+        "amount": "182931220178617885",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1dg2ufnexn8fs2324mdyz8fgrqz4ccplnaqq85s",
+    "coins": [
+      {
+        "amount": "50650948666807216",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st156pj4rd7hfnmunn5n0h73auc8x9u00ggv4ue9f",
+    "coins": [
+      {
+        "amount": "211061893440640423",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1e4zj7wdt9fkh4p054wxptlsq0wu3cygat49jx9",
+    "coins": [
+      {
+        "amount": "231914335010797120",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1ehcspg2k9jcjwzc7z70f806uzdjs5q3ecazu6z",
+    "coins": [
+      {
+        "amount": "801080015622585884",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st16sr79qmltsldj0w9ed7fw265gmfftx4lcs8a5r",
+    "coins": [
+      {
+        "amount": "22264717514758648470",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1l9ga206r5swejyfwy00e4kvfvlrhmuerk3yle9",
+    "coins": [
+      {
+        "amount": "201011354310465681",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1qhtl5n0hj8xfd9q2ktmw82gaeh04ckqa8fyp6q",
+    "coins": [
+      {
+        "amount": "339245617750198283",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st14qvl2z553txtr2k2gmasce5tkf5qwflwjt0k4p",
+    "coins": [
+      {
+        "amount": "61037643008140864",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st147je6yfuwams978p6rqxsn0c4uc3kzwkgqnvru",
+    "coins": [
+      {
+        "amount": "169011994237384090",
+        "denom": "wei"
+      }
+    ]
+  },
+  {
+    "address": "st1kvwt0cglk8r3tw2xmwrzvejeve4md96m4wfzl9",
+    "coins": [
+      {
+        "amount": "224689166577280123",
+        "denom": "wei"
+      }
+    ]
+  }
+]
