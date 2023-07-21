@@ -1,7 +1,7 @@
 # stratos-chain-testnet
 Stratos block testnet genesis and config. 
 
-The latest version is v0.9.0, with a new chain-id `tropos-5`.
+The latest version is v0.10.0, with a new chain-id `mesos-1`.
 
 ## Prepare environment to run node
 
@@ -18,7 +18,7 @@ Once `user` is created, login the system using *stratos* account and proceed wit
 
 ```bash
 cd $HOME
-wget https://github.com/stratosnet/stratos-chain/releases/download/v0.9.0/stchaind
+wget https://github.com/stratosnet/stratos-chain/releases/download/v0.10.0/stchaind
 ```
 
 > These binary files are built using linux amd64, so if you prefer to run a node on a different kernel, please follow step 1.1 to build binaries.
@@ -31,7 +31,7 @@ wget https://github.com/stratosnet/stratos-chain/releases/download/v0.9.0/stchai
 md5sum stchain*
 
 ## Expected output
-## 1843b162a7d2b1f4363938fc73d421e8  stchaind
+##  e7e52a3831f8c22864badbf4c268adb5 stchaind
 ```
 
 - Add `execute` permission to the binary downloaded
@@ -40,12 +40,12 @@ chmod +x stchaind
 ```
 
 ### 1.1 Compile the binary with source code
-Make sure you have Go 1.18+ installed ([link](https://golang.org/doc/install)).
+Make sure you have Go 1.19+ installed ([link](https://golang.org/doc/install)).
 
 ```bash
  git clone https://github.com/stratosnet/stratos-chain.git
  cd stratos-chain
- git checkout tags/v0.9.0
+ git checkout tags/v0.10.0
  make build
 ```
 The binary file `stchaind` can be found in `build` folder. Then, move these two binary files to `$HOME`
@@ -193,10 +193,10 @@ Example
 > After executed the above command, a `.stchaind` will be created in your `$HOME` folder.
 
 ### `Faucet`
-Faucet will be available at https://faucet-tropos.thestratos.org/ to get test tokens
+Faucet will be available at https://faucet-mesos.thestratos.org/ to get test tokens
 
 ```bash
-curl --header "Content-Type: application/json" --request POST --data '{"denom":"stos","address":"your wallet address"} ' https://faucet-tropos.thestratos.org/credit
+curl --header "Content-Type: application/json" --request POST --data '{"denom":"stos","address":"your wallet address"} ' https://faucet-mesos.thestratos.org/credit
 ```
 
 Check balance (you need to wait for your node catching up with the network)
@@ -216,12 +216,12 @@ Check node status
 ```
 
 ```bash
-./stchaind tx bank send user0 st1sqzsk8mplv5248gx6dddzzxweqvew8rtst96fx 1gwei --chain-id=tropos-5  --keyring-backend=test --gas=auto --gas-prices=10000000wei
+./stchaind tx bank send user0 st1sqzsk8mplv5248gx6dddzzxweqvew8rtst96fx 1gwei --chain-id=mesos-1  --keyring-backend=test --gas=auto --gas-prices=10000000wei
 # then input y for the pop up to confirm send
 ```
 > * In testing phase, --keyring-backend="test"
-> * In testing phase, `chain-id` may change when updating, which can be found on [this page](https://explorer-tropos.thestratos.org/), right next to the search bar at the top of the page.
-    The current `chain-id` is `tropos-5`. 
+> * In testing phase, `chain-id` may change when updating, which can be found on [this page](https://explorer-mesos.thestratos.org/), right next to the search bar at the top of the page.
+    The current `chain-id` is `mesos-1`. 
 
 ### Becoming a validator(optional)
 After the following steps have been done, Any participant in the network can signal that they want to become a validator. 
@@ -235,8 +235,6 @@ for more details about validator creation, delegation as well as FAQ.
 
 
 ## References
-* [Tropos Incentive Testnet](https://github.com/stratosnet/sds/wiki/Tropos-Incentive-Testnet)
-
 * ['stchaind' Commands(part1)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaind%60-Commands(part1))
 
 * [stchaind' Commands(part2)](https://github.com/stratosnet/stratos-chain/wiki/Stratos-Chain-%60stchaind%60-Commands(part2))
@@ -248,3 +246,5 @@ for more details about validator creation, delegation as well as FAQ.
 * [How to become a validator](https://github.com/stratosnet/stratos-chain/wiki/How-to-Become-a-Validator)
 
 * [`ppd terminal` subcommand](https://github.com/stratosnet/sds/wiki/%60ppd-terminal%60--subcommands)
+
+* [Stratos Documents](https://docs.thestratos.org)
